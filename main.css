@@ -32,7 +32,7 @@
         @apply text-xl font-primary font-normal text-secondary;
     }
     a{
-        @apply text-sm font-primary;
+        @apply text-sm font-primary ;
     }
     
 }
@@ -47,7 +47,22 @@
     .btn-secondary-2{
         @apply text-white bg-primary px-14 text-center  py-3 rounded-sm inline-block uppercase border-transparent font-semibold;
     }
-    .bg-img::before {
+    .header-right .h-menu ul   {
+        @apply  text-sm font-semibold text-peraghap hover:text-heading flex gap-x-12 items-center ;
+    }
+    
+    .mobile-menu .h-menu {
+        @apply block text-center;
+    }
+    .mobile-menu .h-menu ul li {
+        @apply  py-2 border-b-2  w-36 m-auto text-gray-100 hover:text-white;
+        
+    }
+    .mobile-menu .h-menu .btn-primary {
+        @apply bg-white text-heading block w-full max-w-[219px] m-auto mt-7;
+    }
+    
+    .bg-img::before {   
         content: '';
         position: absolute;
         width: 200%;
@@ -56,7 +71,7 @@
         background-image: url(assets/img/f-bg.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        left: 50%;
+        left: 61%;
         background-position: center;
         top: 52%;
         transform: translate(-50%, -50%);
@@ -104,6 +119,60 @@
     .list a {
         text-align: center;
         display: block;
+    }
+    .menutrigger span {
+        height: 2px;
+        width: 30px;
+        background: #000;
+        display: block;
+    }
+    .menutrigger span:nth-child(2) {
+        margin: 6px 0;
+    }
+    .menutrigger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menutrigger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-7px) translateX(4px);
+    }
+    .menutrigger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(7px) translateX(4px);
+    }
+
+
+    .mobile-menu {
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        background: #2B2B52;
+    } 
+    /* .h-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    } */
+
+
+
+
+
+
+
+    .infity{
+        position: relative;
+        animation: rotation 8s linear infinite;
+    }
+    @keyframes rotation{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
     }
 
 } 
