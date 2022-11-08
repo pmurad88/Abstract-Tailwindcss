@@ -24,6 +24,10 @@ module.exports = {
                 'line': "#D9E0F0",
                 'icone': "#7259fb",
                 'peraghap': "#95A1BC",
+                'gray-100': "#ae2e41",
+                'gray-200': "#ff70dd",
+                'gray-300': "#e2ddfe",
+
             }
         },
         fontFamily:{

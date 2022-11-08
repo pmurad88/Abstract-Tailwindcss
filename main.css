@@ -76,55 +76,32 @@
         top: 52%;
         transform: translate(-50%, -50%);
         z-index: -1;
+        
     }
     .pricing-item li::before {
         content: "\f058";
         font-family: "Font Awesome 6 Free";
-        position: absolute;
-        left: 0;
-        width: 25px;
-        height: 25px;
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        color: #7259fb;
-        font-weight: 800;
+        @apply absolute left-0 w-[25px] h-[25px] text-2xl flex justify-center items-center rounded-full text-icone font-extrabold
     }
     .pricing-item li {
-        position: relative;
-        padding: 15px 43px;
-        color: #58678C;
-        font-size: 16px;
-        font-weight: 400;
-        border-top: 1.5px solid #e2ddfe;
+        @apply relative py-[15px] px-[43px] text-secondary text-[16px] font-normal border-t-[1.5px] border-gray-300;
+
     }
     .pricing-item li.cross::before {
         content: "\f056";
-        color: #ff70dd;
-        font-size: 25px;
+        @apply text-gray-200 text-2xl;
     }
     .spech-sec p {
-        font-size: 18px;
-        font-weight: 400;
-        padding: 25px 0;
+        @apply text-lg font-normal py-6 ;
     }
     .spech-sec span {
-        font-size: 18px;
-        margin-top: 18px;
-        display: block;
-        color: #2B2B52;
+        @apply text-lg mt-[18px] block text-button
     }
     .list a {
-        text-align: center;
-        display: block;
+        @apply text-center block;
     }
     .menutrigger span {
-        height: 2px;
-        width: 30px;
-        background: #000;
-        display: block;
+        @apply h-[2px] w-[30px] bg-black block;
     }
     .menutrigger span:nth-child(2) {
         margin: 6px 0;
@@ -141,12 +118,7 @@
 
 
     .mobile-menu {
-        position: absolute;
-        top: 75px;
-        width: 100%;
-        left: 0;
-        padding: 20px;
-        background: #2B2B52;
+        @apply absolute top-[75px] w-full left-0 p-5 bg-button ;
     }
 
 
@@ -166,16 +138,5 @@
 } 
 
 .go-top {
-	position: fixed;
-	background: #ae2e41;
-	z-index: 10;
-	bottom: 40px;
-	right: 20px;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	border-radius: 50%;
+    @apply fixed bg-gray-100 z-10 bottom-10 w-10 h-10 right-5 flex items-center justify-center text-white rounded-full;
 }
