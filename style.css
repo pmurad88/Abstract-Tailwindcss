@@ -659,6 +659,13 @@ a {
   align-items: center;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.header-right .h-menu ul li a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
@@ -666,7 +673,7 @@ a {
   color: rgb(149 161 188 / var(--tw-text-opacity));
 }
 
-.header-right .h-menu ul:hover {
+.header-right .h-menu ul li a:hover {
   --tw-text-opacity: 1;
   color: rgb(43 43 82 / var(--tw-text-opacity));
 }
@@ -683,7 +690,7 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgb(174 46 65 / var(--tw-text-opacity));
+  color: rgb(149 161 188 / var(--tw-text-opacity));
 }
 
 .mobile-menu .h-menu ul li:hover {

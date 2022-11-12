@@ -47,7 +47,10 @@
     .btn-secondary-2{
         @apply text-white bg-primary px-14 text-center  py-3 rounded-sm inline-block uppercase border-transparent font-semibold;
     }
-    .header-right .h-menu ul   {
+    .header-right .h-menu ul{
+        @apply  flex gap-x-12 items-center ;
+    }
+    .header-right .h-menu ul li a{
         @apply  text-sm font-semibold text-peraghap hover:text-heading flex gap-x-12 items-center ;
     }
     
@@ -55,7 +58,7 @@
         @apply block text-center;
     }
     .mobile-menu .h-menu ul li {
-        @apply  py-2 border-b-2  w-36 m-auto text-gray-100 hover:text-white;
+        @apply  py-2 border-b-2  w-36 m-auto text-peraghap hover:text-white;
         
     }
     .mobile-menu .h-menu .btn-primary {
