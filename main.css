@@ -138,5 +138,5 @@
 } 
 
 .go-top {
-    @apply fixed bg-gray-100 z-10 bottom-10 w-10 h-10 right-5 flex items-center justify-center text-white rounded-full;
+    @apply fixed bg-primary z-10 bottom-10 w-10 h-10 right-5 flex items-center justify-center text-white rounded-full;
 }
